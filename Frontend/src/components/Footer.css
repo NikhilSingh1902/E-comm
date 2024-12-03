@@ -1,0 +1,107 @@
+/* src/last.css */
+
+.footer {
+    background-color: #f8f9fad8; /* Light grey background */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Wraps content on smaller screens */
+    justify-content: space-between; /* Spaces out sections */
+}
+
+.footer-address {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 200px;
+    margin-top: 10px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px; /* Ensure there is spacing between sections */
+    text-align: center; /* Center align the content */
+    min-width: 150px; /* Ensure sections have minimum width */
+}
+
+.footer-section h3 {
+    margin-top: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    margin-left: 0; /* Remove margin to align items properly */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #dee2e6; /* Light grey border */
+    margin-top: 10px;
+}
+
+.face {
+    width: 25%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.appp {
+    width: 60%;
+}
+
+/* Responsive adjustments for tablets (768px and up) */
+@media (max-width: 1024px) { /* Tablet and small screens */
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center content horizontally */
+    }
+
+    .footer-address, 
+    .footer-section {
+        margin-right: 0; /* Remove margin for a more compact view */
+        margin-bottom: 20px; /* Add spacing between stacked items */
+        min-width: 100%; /* Ensure full width for smaller screens */
+        text-align: center; /* Center-align text for better mobile view */
+    }
+
+    .footer-section ul li {
+        margin-left: 0; /* Remove left margin on mobile */
+    }
+
+    .footer-bottom {
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+
+    .face {
+        width: 20%; /* Adjust width for tablets */
+        padding: 5px;
+    }
+
+    .appp {
+        width: 30%; /* Adjust width for tablets */
+        padding: 5px;
+    }
+}
+
+/* Responsive adjustments for mobile screens (576px and below) */
+@media (max-width: 576px) { /* Mobile screens */
+    .face {
+        width: 20%; /* Adjust width for very small screens */
+        padding: 5px;
+    }
+
+    .appp {
+        width: 30%; /* Adjust width for very small screens */
+        padding: 5px;
+    }
+}
